@@ -1,3 +1,9 @@
+/subwayGUI
+/subway/bin
+/subway/obj
+/subway/packages
+/subway/.vs
+
 # Prerequisites
 *.d
 
