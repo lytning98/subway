@@ -13,9 +13,9 @@ namespace subway.JsonClass
         public string Title { get; set; }
 
         [JsonProperty("stations")]
-        public IList<SubwayStation> Stations { get; set; }
+        public List<SubwayStation> Stations { get; set; }
 
         [JsonProperty("lines")]
-        public IList<SubwayLine> Lines { get; set; }
+        public List<SubwayLine> Lines { get; set; }
     }
 }

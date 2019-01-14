@@ -13,6 +13,6 @@ namespace subway.JsonClass
         public string Name { get; set; }
 
         [JsonProperty("path")]
-        public IList<string> Path { get; set; }
+        public List<string> Path { get; set; }
     }
 }
