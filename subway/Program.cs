@@ -61,8 +61,14 @@ namespace subway
             {
                 Console.WriteLine("当前以无参数方式启动.");
                 LineQuery.LineStations();
+                return;
             }
-            
+            Console.WriteLine("参数有误, 请仔细检查.");
+            Console.WriteLine(" - 路径查询: subway.exe /b 起始站 终到站"); ;
+            Console.WriteLine(" - 线路查询: subway.exe");
+            Console.WriteLine(" - 环游路径: subway.exe /a 起始站");
+            Console.WriteLine(" - 检测答案: subway.exe /z 答案txt路径");
+            Console.WriteLine(" - 启动GUI: subway.exe /g");
         }
     }
 }
