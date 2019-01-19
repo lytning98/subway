@@ -84,15 +84,26 @@ namespace subway
                 current = next;
             }
 
+            bool done = true;
+            List<string> stations = new List<string>();
             for(int i = 0; i < traveled.Length; i++)
                 if(!traveled[i])
                 {
-                    Console.WriteLine("false");
-                    Console.WriteLine("遗漏了站点：{0}", Map.subwayMap.Stations[i].Name);
+                    done = false;
+                    stations.Add(Map.subwayMap.Stations[i].Name);
                     return;
                 }
-
-            Console.WriteLine("true");
+            
+            if(!done)
+            {
+                Console.WriteLine("false");
+                Console.WriteLine("遗漏站点：");
+                foreach (string str in stations)
+                    Console.WriteLine(str);
+            }else
+            {
+                Console.WriteLine("true");
+            }
             return;
         }
     }
