@@ -69,9 +69,9 @@ namespace subway
                     return;
                 }
             bool[] traveled = new bool[Map.StationCount];
-            int current = Map.StationId[lines[1]];
+            int current = Map.StationId[lines[0]];
             traveled[current] = true;
-            for(int i = 2; i < lines.Count; i++)
+            for(int i = 1; i < lines.Count; i++)
             {
                 int next = Map.StationId[lines[i]];
                 traveled[next] = true;
