@@ -91,7 +91,7 @@ namespace subway
                 {
                     done = false;
                     stations.Add(Map.subwayMap.Stations[i].Name);
-                    return;
+                    break;
                 }
             
             if(!done)
